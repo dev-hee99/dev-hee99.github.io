@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://dev-hee99.github.io",
+  "homepage": "https://dev-hee99.github.io/dev-hee99.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
