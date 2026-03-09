@@ -45,17 +45,16 @@ export default function About() {
 
                     <div className="about-timeline">
                         <h3>학력 및 경력</h3>
-
-                        <div className="timeline-item">
-                            <div className="timeline-marker degree-marker\"></div>
-                            <div className="timeline-content">
-                                <h4>두원공과대학교 (2021.02 졸업)</h4>
-                                <p>전문학사 - 스마트소프트웨어학과</p>
-                                <span className="timeline-desc\">프로그래밍 기초 및 실무 기술 습득</span>
-                            </div>
-                        </div>
-
                         <div className="timeline">
+                            <div className="timeline-item">
+                                <div className="timeline-marker degree-marker\"></div>
+                                <div className="timeline-content">
+                                    <h4>두원공과대학교 (2021.02 졸업)</h4>
+                                    <p>전문학사 - 스마트소프트웨어학과</p>
+                                    <span className="timeline-desc\">프로그래밍 기초 및 실무 기술 습득</span>
+                                </div>
+                            </div>
+
                             <div className="timeline-item">
                                 <div className="timeline-marker degree-marker"></div>
                                 <div className="timeline-content">

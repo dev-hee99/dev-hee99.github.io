@@ -28,7 +28,7 @@ export default function Projects() {
       description: '호텔신라 및 신라스테이의 내부 규정 검색 시스템 도입. 고급 검색 API 개발 및 최적화. 신규 검색 인프라 구축.',
       image: '🏨',
       period: '2022.04 ~ 2022.06 (3개월)',
-      tags: ['Java', 'Oracle', 'Elasticsearch', 'API'],
+      tags: ['Java', 'Oracle'],
     },
     {
       id: 3,
