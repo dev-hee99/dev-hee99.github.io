@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Scrollspy */
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* React icons */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}

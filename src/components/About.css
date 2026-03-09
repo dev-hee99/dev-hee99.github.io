@@ -1,0 +1,248 @@
+.about {
+  padding: 5rem 0;
+  background: white;
+}
+
+[data-theme='dark'] .about {
+  background: #0f172a;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about-text h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme='dark'] .about-text p {
+  color: #cbd5e1;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--light-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .stat {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  background: var(--gradient);
+}
+
+.stat:hover .stat-number,
+.stat:hover .stat-label {
+  color: white;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #64748b;
+  transition: color 0.3s ease;
+}
+
+.about-certifications {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--light-color);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+[data-theme='dark'] .about-certifications {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.about-certifications h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cert-list li {
+  padding: 0.5rem 0;
+  color: #64748b;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .cert-list li {
+  color: #cbd5e1;
+}
+
+/* Timeline */
+.about-timeline h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-color);
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  margin-left: 60px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -45px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .timeline-item::before {
+  background: var(--light-color);
+}
+
+.timeline-item:hover::before {
+  background: var(--primary-color);
+  box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.1);
+  transform: scale(1.1);
+}
+
+.timeline-item .degree-marker {
+  border-color: #f59e0b;
+}
+
+.timeline-item .degree-marker::before {
+  border-color: #f59e0b;
+}
+
+.timeline-item:hover .degree-marker {
+  background: #f59e0b;
+}
+
+.timeline-marker {
+  display: none;
+}
+
+.timeline-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+.timeline-content p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+[data-theme='dark'] .timeline-desc {
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 0;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    margin-left: 50px;
+  }
+
+  .timeline-item::before {
+    left: -40px;
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}
